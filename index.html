@@ -1,13 +1,282 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-  </body>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="d-none d-sm-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-1">
+                        <img src="./img/LOGO.png" alt="" class="logo">
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <ul class="navbar_list">
+                            <li>ГЛАВНАЯ</li>
+                            <li>МЕНЮ</li>
+                            <li>О НАС</li>
+                            <li>БРОНЬ</li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="circle">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <h3>+998934743604</h3>
+                        </div>
+                        <p class="nami">Свяжитесь с нами для
+                            бронирования</p>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                        <button class="btn_person">ЗАКАЗ СТОЛИКА</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="d-block d-sm-none">
+            <div class="container-fluid">
+                <img src="./img/LOGO.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="restaurant">
+                            <h2>Добро пожаловать в <br>
+                                Наш ресторан
+                            </h2>
+                            <p>ДОМ ЛУЧШЕЙ ЕДЫ</p>
+                            <button>VIEW MENU</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="section_one">
+        <div class="container">
+            <div class="row justify-content-space-around    ">
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <img src="./img/Mask Group.png" alt="">
+                        <h2>Магическая <span>Атмосфера</span></h2>
+                        <p>В нашем заведении царит магическая атмосфера
+                            наполненная вкусными ароматами</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <img src="./img/Mask Group.png" alt="">
+                        <h2>Магическая <span>Атмосфера</span></h2>
+                        <p>В нашем заведении царит магическая атмосфера
+                            наполненная вкусными ароматами</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <img src="./img/Mask Group.png" alt="">
+                        <h2>Магическая <span>Атмосфера</span></h2>
+                        <p>В нашем заведении царит магическая атмосфера
+                            наполненная вкусными ароматами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_two">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="history">
+                        <h2>Наша <span>История</span></h2>
+                        <p>Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана
+                            пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял
+                            в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им
+                            пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</p>
+                    </div>
+                    <div class="tell">
+                        <div class="num">
+                            <h3>92</h3>
+                            <h2>Напитки</h2>
+                        </div>
+                        <div class="num">
+                            <h3>206</h3>
+                            <h2>Еда</h2>
+                        </div>
+                        <div class="num">
+                            <h3>71</h3>
+                            <h2>Закуски</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img src="./img/images.png" alt="" class="logo_png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_three">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="window">
+                        <h2>Отпразднуйте в одном из
+                            самых лучших ресторанов.</h2>
+                        <p>Только в этом месяце бизнес-ланч от 250 ₽</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <button class="zakaz">ЗАКАЗ СТОЛИКА</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_four">
+        <div class="container">
+            <div class="row">
+                <h2 class="blyuda">Наши <span>Блюда</span></h2>
+                <div class="col-12 col-sm-6">
+                    <div class="nasha">
+                        <img src="./img/Mask Group (1).png" alt="" class="mask">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="the">
+                        <div>
+                            <img src="./img/Mask Group (2).png" alt="">
+                            <h3>Гамбургер мини</h3>
+                            <p>220 ₽</p>
+                        </div>
+                        <div>
+                            <img src="./img/Mask Group (2).png" alt="">
+                            <h3>Гамбургер мини</h3>
+                            <p>220 ₽</p>
+                        </div>
+                        <div>
+                            <img src="./img/Mask Group (2).png" alt="">
+                            <h3>Гамбургер мини</h3>
+                            <p>220 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_five">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./img/CHECK OUR MENU.png" alt="" class="check">
+                    <p class="day">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной
+                        Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот
+                        ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+                    <img src="./img/beard-1845166_1920 1.png" alt="" class="beard">
+                    <h2 class="pastel">Посетитель</h2>
+                    <p class="men">Николай</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section_six">
+        <div class="container">
+            <div class="row">
+                <h2 class="unlock">Наши <span>Повара</span></h2>
+                <div class="col-12 col-sm-4">
+                    <img src="./img/cook-196932_1920 1.png" alt="" class="aloo">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="./img/pizza-366111_1280 1.png" alt="" class="aloo">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="./img/image 4.png" alt="" class="aloo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer_start">
+        <div class="container">
+            <div class="row">
+               <div class="col-12">
+                <img src="./img/st-826688_1920 1.png" alt="">
+               </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
